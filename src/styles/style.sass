@@ -2,11 +2,57 @@
 @import './resets/reset.css'
 
 /* Contents */
+// 1. Fonts
 
 /*************/
+
+
+// 1. FONTS
+
+
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P)
+
+
+
+$main-font: 'Press Start 2P', cursive
+
+
+$site-background: url('https://www.dropbox.com/s/tgyetb0rljyrkxn/stones.jpg?dl=1')
+
+$bar-col: #8E8566
+$default-spacing: 1rem
 
 
 //Base
 html, #root
   height: 100%
   width: 100%
+  font-family: $main-font
+
+body
+  height: 100%
+
+h1
+  font-size: 2em
+
+
+.app
+  height: 100%
+  background: $site-background
+  padding-top: $default-spacing
+
+header
+  background: $bar-col
+  text-align: center
+  padding: $default-spacing
+  margin-bottom: $default-spacing
+
+
+.board
+  height: 60vh
+  background: black
+
+.stats-bar
+  padding: $default-spacing 0
+  background: $bar-col
+  margin-top: $default-spacing
