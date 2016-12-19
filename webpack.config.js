@@ -31,7 +31,7 @@ const common = {
     new HtmlWebPackPlugin({
       title: 'react-babel-sass-starter',
       //template: 'html!./src/templates/index.html'
-      template: './src/templates/index.jade'
+      template: './src/templates/index.pug'
     })
   ],
   module: {
@@ -42,8 +42,8 @@ const common = {
          include: PATHS.src
        },
        { // jade loader
-         test: /\.jade$/,
-         loader: 'jade'
+         test: /\.pug$/,
+         loader: 'pug'
        },
        { // assets loader
          test:/\.(jpg|png|gif)/,
